@@ -19,7 +19,7 @@
     <div >
         <img src="./assets/img/BGmixigaming.jpg" class="mixi" alt="">
     </div>
-    <div id="header">
+                        <div id="header">
         
                             <ul id="nav">
                                 <li><a href="#">Home</a></li>
@@ -41,44 +41,43 @@
                                 </li>
                             </ul>
 
-                        <div class="search">
-                        <i class="ti-search"></i>
+                                    <div class="search">
+                                    <i class="ti-search"></i>
+                                    </div>
+
+
+                                    <div id="mobile-menu" class="mobile-menu-btn">
+                                        <i class="ti-menu"></i>
+                                    </div>
                         </div>
-
-
-                <div id="mobile-menu" class="mobile-menu-btn">
-                    <i class="ti-menu"></i>
-                </div>
-    </div>
 
     <div>
         <img src="./assets/img/nen1/mixi4.jpg" class="pro2" alt="">
     </div>
 
         <div>
-    <script>
-        $(document).ready(function(){
-            $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
-        });
-    </script>
+            <script>
+                    $(document).ready(function(){
+                        var owl = $('.owl-carousel');
+                        owl.owlCarousel({
+                            items:1,
+                            loop:true,
+                            margin:10,
+                            autoplay:true,
+                            autoplayTimeout:2000,
+                            autoplayHoverPause:true
+                        });
+                        $('.play').on('click',function(){
+                            owl.trigger('play.owl.autoplay',[2000])
+                        })
+                        $('.stop').on('click',function(){
+                            owl.trigger('stop.owl.autoplay')
+                        })
+                    });
+            </script>
       
 
-
+     
         <div id="content">  
          <div id="tour" class="content-section">
           <h2 class="section-heading">About Phanh</h2>
@@ -121,11 +120,168 @@
                         <div class="item">
                             <img src="./assets/img/anh7.jpg" class="pro" alt="7">
                         </div>
+                        <div class="item">
+                            <img src="./assets/img/anh8.jpg" class="pro" alt="7">
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/anh9.jpg" class="pro" alt="7">
+                        </div>
                     </div>
                 </div>
         </div>
        
     </div>
+
+
+
+    <div id="tour" class="tour-section">
+            
+        <div class="content-section">
+        
+            <div class="places-list row ">
+
+                <div class="col col-third ">
+                <img src="./assets/img/nen1/mixi2.jpg" alt="NewYork" class="botrontren place-img">
+                    <div class="place-body botronduoi">
+                        <h3 class="place-heading">New York</h3>
+                        <p class="place-time">Fri 27 Nov 2016</p>
+                        <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="col col-third ">
+                    <img src="./assets/img/nen1/mixi3.jpg" alt="NewYork" class="botrontren place-img">
+                    <div class="place-body botronduoi">
+                        <h3 class="place-heading">Paris</h3>
+                        <p class="place-time">Sat 28 Nov 2016</p>
+                        <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="col col-third">
+                    <img src="./assets/img/nen1/mixi5.jpg" alt="NewYork" class="botrontren place-img">
+                    <div class="place-body  botronduoi">
+                        <h3 class="place-heading">San Francisco</h3>
+                        <p class="place-time">Sun 29 Nov 2016</p>
+                        <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                    </div>
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+   
+
+
+        <div class="modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close">
+    
+                    </i>
+                </div>
+                    <header class="modal-header">
+                        <i class="ti-bag"></i>
+                        Tickets
+                    </header>
+                
+            <div class="modal-body">
+                <label for="quanlity1" class="modal-label">
+                    <i class="ti-shopping-car"></i>
+                    Tickets,15$ per person
+                </label>
+                <input id="quanlity1" type="text" class="modal-input id="quanlity placeholder="How many?">
+    
+    
+                <label for="quanlity2" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input id="quanlity2" type="email" class="modal-input id="quanlity placeholder="Enter email...">
+                <button id="buy-tickets">
+                    PAY <i class="ti-check"></i>
+    
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+            <div id="contactmain" class="content-section1">
+                <h2 id="contact" class="section-heading1">CONTACT</h2>
+                <p class="section-heading1">Fan? Drop a note!</p>
+            <div class="row">
+                <div class="col col-half">
+                    <div class="vitri">
+                    <i class="ti-location-pin">
+                        Chicago, US
+                    </i>
+                    </div>
+                    <div class="sdt">
+                    <i class="ti-mobile">
+                        Phone: +00 151515
+                    </i>
+                    </div>
+                    <div class="email">
+                    <i class="ti-email">
+                        Email: mail@mail.com
+                    </i>
+                    </div>
+                </div>
+                <div class="col col-half">
+                <form action="">
+                    <div class="row">
+                        <div class="col col-half">
+                            <input type="text" name="" id="" placeholder="Name" required class="form-control1">
+                        </div>
+
+                        <div class="col col-half">
+                            <input type="email" name="" id="" placeholder="Email" required class="form-control2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-full">
+                            <input type="text" name="" id="" placeholder="Message" required class="form-control3">
+                        </div>
+                    </div>
+                    <input type="submit" class="send" value="SEND">
+                </form>
+            
+                
+                </div>
+         
+            
+        
+
+
+
+            <script>
+                const buyBtns = document.querySelectorAll('.js-buy-ticket')
+                
+                const modal = document.querySelector('.modal')
+                const modalClose = document.querySelector('.js-modal-close')
+                const modalContainer = document.querySelector('.js-modal-container')
+                // click để tắt bật theo java, đăt biến để lấy modal ra rồi thêm class vào 
+                function showBuytickets() {
+                    modal.classList.add('open')
+                }
+        
+                for(const buyBtn of buyBtns) {
+                    buyBtn.addEventListener('click', showBuytickets)
+                }
+                modalClose.addEventListener('click', hideBuytickets)
+                function hideBuytickets() {
+                    modal.classList.remove('open')
+                }
+                modal.addEventListener('click',hideBuytickets)
+                modalContainer.addEventListener('click', function(event) {
+                    event.stopPropagation()
+                })
+            </script>
         <script>
           var header = document.getElementById('header')
           
