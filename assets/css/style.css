@@ -326,9 +326,16 @@ font-weight: 600;
 
 .pro10{
     width: 100%;
-    height: 700px;
+    height: 850px;
     margin-top: 150px;
     background-color: #757575;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.proimg{
+    width: 33.33333%;
+    margin-left: 33.333333%;
+    margin-top: 110px;
+
 }
 .place-desc{
     margin-bottom: 15px;
