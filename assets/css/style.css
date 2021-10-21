@@ -370,6 +370,9 @@ display: inline-block;
 .clear{
     clear: both;
 }
+.mp3{
+    display: none;
+}
 .modal{
     position: fixed;
     top: 0;
@@ -548,10 +551,18 @@ display: inline-block;
 .col-full{
     width: 100%;
 }
+.a:hover{
+    transform: scale(1.2);
+}
+.a{
+    float: left;
+}
+
 .text-center{
     text-align: center;
 }
 .last{
+    background-color: #757575;
     margin-left: 47.5%;
     font-size: 30px;
     
