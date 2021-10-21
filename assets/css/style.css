@@ -328,14 +328,26 @@ font-weight: 600;
     width: 100%;
     height: 850px;
     margin-top: 150px;
-    background-color: #757575;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+    transition: transform .2s;
+}
+.proimg:hover{
+    transform: scale(1.2);
+}
+.to:hover{
+    transform: scale(1.2);
 }
 .proimg{
     width: 33.33333%;
     margin-left: 33.333333%;
     margin-top: 110px;
-
+    transition: transform .2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+.pro20{
+    background-color: #757575;
 }
 .place-desc{
     margin-bottom: 15px;
@@ -539,6 +551,19 @@ display: inline-block;
 }
 .text-center{
     text-align: center;
+}
+.last{
+    margin-left: 47.5%;
+    font-size: 30px;
+    
+}
+.love{
+    margin-left:40%;
+}
+.love1{
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
 }
 @media (min-width: 740px) and (max-width: 1023px) {
 
